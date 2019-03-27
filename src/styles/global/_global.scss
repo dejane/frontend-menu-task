@@ -1,0 +1,82 @@
+body {
+    font-family: $font-family-base;
+    color: $brand-primary;
+    line-height: $line-height-base;
+    font-size: $font-size-base;
+    letter-spacing: 0.05rem;
+    overflow-x: hidden;
+}
+
+.container {
+
+    @include media-breakpoint-down(lg) {
+        padding: 0 $spacer*2;
+    }
+}
+
+
+.section {
+    padding: $spacer*4 0;
+    @include media-breakpoint-down(sm) {
+        padding: $spacer*2 0;
+    }
+}
+
+
+a {
+    color: $brand-primary;
+    font-size: $font-size-small;
+    &:hover {
+        color: $brand-primary;
+        text-decoration: underline;
+    }
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: $line-height-headings;
+}
+
+.btn-primary {
+    background: $brand-primary;
+    border: none;
+}
+
+
+// svg logo animation
+
+
+.svg-logo {
+    position: absolute;
+    top: -6px;
+    left: 0;
+    width: 170px;
+    height: auto;
+}
+
+.logo-single-letter {
+
+  animation: my_animation 1s ease alternate 10; // animation occurs 10 times then stop
+
+  &:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  &:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  &:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+  &:nth-child(5) {
+    animation-delay: 0.4s;
+  }
+}
+
+@keyframes my_animation {
+  90% {
+    transform: scale(1.0);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}

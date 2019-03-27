@@ -1,0 +1,60 @@
+/*
+* hero and imgbanner
+*/
+
+#hero, #banner2 {
+
+    background-image: url(../images/shutterstock_306557120-run.jpg);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    min-height: 850px;
+    display: flex;
+    align-items: center;
+
+    @include media-breakpoint-down(md) {
+        min-height: 500px;
+    }
+    @include media-breakpoint-down(sm) {
+        min-height: 400px;
+    }
+
+    h2 {
+        font-size: $font-size-h2;
+        color: #fff;
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        flex-basis: 100%;
+        margin-bottom: $spacer*1.5;
+        
+
+        @include media-breakpoint-down(md) {
+            @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                padding-top: 10%;
+            }
+        }
+        @include media-breakpoint-down(sm) {
+            font-size: $font-size-h2;
+        }
+    }
+
+    p {
+        color: white;
+    }
+
+}
+
+.portfolio {
+    
+    img {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+}
+
+.paralax {
+    background-attachment: fixed;
+}

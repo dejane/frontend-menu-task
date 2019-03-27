@@ -1,0 +1,19 @@
+.footer-main {
+    color: #fff;
+    background-color: $brand-primary;
+    padding: $spacer*1.5 0;
+    border-top: 1px solid #fff;
+       
+        .content-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+}
+
+
